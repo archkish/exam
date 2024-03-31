@@ -1,0 +1,24 @@
+
+[
+  {
+    "image": "../assets/images/slide1.jpeg"
+  }, 
+  {
+    "image": "../assets/images/slide2.webp"
+  },
+  {
+    "image": "../assets/images/slide3.webp"
+  },
+  {
+    "image": "../assets/images/slide4.webp"
+  },
+  {
+    "image": "../assets/images/slide5.webp"
+  },
+  {
+    "image": "../assets/images/slide6.webp"
+  },
+  {
+    "image": "../assets/images/slide7.webp"
+  }
+]

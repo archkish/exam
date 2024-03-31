@@ -13,7 +13,7 @@
     width: 44%;
     padding-top: 36px;
     color: $subtitle-color;
-
+    margin-bottom: 60px;
   }
   .info-title {
     font-family: "Manrope SemiBold";
@@ -46,9 +46,23 @@
   .wrap-slider {
     width: 60%;
     position: relative;
+    .slick-slide {
+      div {
+        padding: 0;
+      }
+      img {
+        object-position: 0px -70px;
+        object-fit: contain;
+      }
+    }
+    .slides-wrapp {
+      top: 90%;
+      right: 50%;
+      transform: translateX(50%);
+    }
   }
 
-  .price {
+  .card {
     border-top: 1px solid $border-color;
     padding: 80px 0;
     display: flex;
@@ -68,11 +82,40 @@
     &-price {
       font-size: 5rem;
     }
+    &-link {
+      cursor: pointer;
+      color: rgb(242, 242, 243);
+      font-family: "Manrope Medium";
+      font-size: 1.13rem;
+      background-color: transparent;
+      text-transform: uppercase;
+      text-decoration: none;
+      border: none;
+      a {
+        padding-bottom: 5px;
+        width: 100%;
+        height: 100%;
+        color: $link-color;
+        text-transform: uppercase;
+        text-decoration: none;
+        border-bottom: 0.0625rem solid rgb(47, 47, 55);
+      }
+      &:hover {
+        
+        a {
+          
+          color: $subtitle-color;
+          border-color: $hero-name-color;
+        }
+        svg path {
+          fill: $subtitle-color;
+        }
+      }
+    }
     &-list {
       width: 68%;
       ul {
         list-style-type: none;
-        // max-width: 100%;
       }
       li {
         position: relative;
@@ -98,8 +141,29 @@
       }
     }
   }
+
 }
 
+
+
+
+@media screen and (max-width: 964px)  {
+  .slides-wrapp {
+    position: absolute;
+    top: 101%;
+    left: 50%;
+    transform: translateX(-50%);
+
+  }
+}
+@media screen and (max-width: 1511px) {
+  .card {
+    &-bottom {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}
 @media screen and (max-width: 1440px) {
   .services__price {
     .info-title {
@@ -116,7 +180,7 @@
         height: 48px;
       }
     }
-    .price {
+    .card {
       padding: 60px 0;
       &-title {
         font-size: 1rem;
@@ -145,6 +209,12 @@
       width: 100%;
     }
   }
+  .card {
+
+    &-price {
+      font-size: 2rem;
+    }
+  }
 }
 
 @media screen and (max-width: 1175px) {
@@ -161,7 +231,7 @@
       font-size: 0.88rem;
       margin-bottom: 28px;
     } 
-    .price {
+    .card {
       padding: 80px 0;
       flex-direction: column;
       align-items: center;
@@ -169,6 +239,7 @@
         width: 100%;
       }
       &-bottom {
+        flex-direction: row;
         justify-content: space-between;
       }
       &-list {

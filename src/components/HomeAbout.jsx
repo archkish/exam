@@ -1,6 +1,12 @@
 import { Link } from "react-router-dom"
+import { useState } from "react"
+import Modal from "./Modal"
+
 
 export default function HomeAbout() {
+
+  const [isShow, setIsShow] = useState(false)
+
   return (
     <section className="about">
       <div className="about-top">
@@ -78,7 +84,7 @@ export default function HomeAbout() {
                 </div>
                 <div className="btns">
                   <div className="top-btn">
-                    <button type="button">Let’s Work</button>
+                    <button type="button" onClick={() => {setIsShow(true)}}>Let’s Work</button>
                   </div>
                   <div className="top-btn">
                     <a  href="/data/cv.pdf" download >Download CV</a>
@@ -89,6 +95,8 @@ export default function HomeAbout() {
           </div>
         </div>
       </div>
+      <Modal isShow={isShow} onClose={() => {setIsShow(false)}}> 
+      </Modal>
     </section>
   )
 }
