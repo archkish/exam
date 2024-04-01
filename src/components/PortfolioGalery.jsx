@@ -1,11 +1,26 @@
+import Galery from "./Galery"
 export default function PortfolioGalery() {
+
   return(
     <section className="portfolio__galery">
-      <div className="galery__title">Photo gallery</div>
-      <div className="slider-container">
-        <div className="slider">
+        <div className="portfolio-tile">
+          <div className="galery__title">Portraits Photography</div>
+          <div className="portfolio-block">
+            <Galery/>
+          </div>
         </div>
-      </div>
+        <div className="portfolio-tile">
+          <div className="galery__title">Portraits Photography</div>
+          <div className="portfolio-block">
+            <Galery/>
+          </div>
+        </div>
+        <div className="portfolio-tile">
+          <div className="galery__title">Portraits Photography</div>
+          <div className="portfolio-block">
+            <Galery/>
+          </div>
+        </div>
     </section>
   )
 }
