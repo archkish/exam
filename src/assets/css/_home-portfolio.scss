@@ -24,9 +24,14 @@
 
 .card {
   &-img {
+    cursor: pointer;
     border-radius: 20px;
     overflow: hidden;
     margin-bottom: 19px;
+    &:hover {
+      opacity: .7;
+    }
+    
   }
   &-body {
     display: flex;

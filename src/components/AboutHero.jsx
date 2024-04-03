@@ -1,3 +1,5 @@
+import Counters from "./Counters";
+
 export default function AboutHero() {
   return(
     <section className="about__hero">
@@ -13,7 +15,8 @@ export default function AboutHero() {
         <div className="info-subtitle">About</div>
         <div className="info-name">About damien braun</div>
       </div>
-      <div className="about__numbers">
+      <Counters/>
+      {/* <div className="about__numbers">
         <ul>
           <li>
             <div className="count"><span id="years"></span><span>+</span>
@@ -42,7 +45,7 @@ export default function AboutHero() {
           </li>
 
         </ul>
-      </div>         
+      </div>          */}
       <div className="about__biography">
         <div className="biography-title">my biography</div>
         <div className="biography-descr">Damien Braun's love affair with photography began at a young age, nurtured by the captivating landscapes and vibrant cultures surrounding her in the heart of the USA. Her passion for storytelling through imagery led her to embark on a photography journey that has spanned over 15 years.

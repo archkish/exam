@@ -59,7 +59,7 @@ export default function PortfolioSlider() {
         </button>
       </div>
       <Slider ref={slider} {...settings}>
-        {slides.map((slide, index) => <PortfolioSliderItem {...slide} key={index}/>)}
+        {slides.map((slide, index) => <PortfolioSliderItem {...slide} key={index} slides={slides}/>)}
       </Slider>
     </div>
   )

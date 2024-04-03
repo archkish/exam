@@ -1,24 +1,27 @@
 import Galery from "./Galery"
 export default function PortfolioGalery() {
+  const fetchUrlPortrait = '/data/dataServicesSlides.json'; 
+  const fetchUrlEvents = '/data/dataEventsSlides.json'; 
+  const fetchUrlComerc = '/data/dataComercialSlides.json'; 
 
   return(
     <section className="portfolio__galery">
         <div className="portfolio-tile">
           <div className="galery__title">Portraits Photography</div>
           <div className="portfolio-block">
-            <Galery/>
+            <Galery fetchUrl={fetchUrlPortrait}/>
           </div>
         </div>
         <div className="portfolio-tile">
-          <div className="galery__title">Portraits Photography</div>
+          <div className="galery__title">Events Photography</div>
           <div className="portfolio-block">
-            <Galery/>
+            <Galery fetchUrl={fetchUrlEvents}/>
           </div>
         </div>
         <div className="portfolio-tile">
-          <div className="galery__title">Portraits Photography</div>
+          <div className="galery__title">Commercial Photography</div>
           <div className="portfolio-block">
-            <Galery/>
+            <Galery fetchUrl={fetchUrlComerc}/>
           </div>
         </div>
     </section>

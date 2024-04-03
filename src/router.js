@@ -6,6 +6,7 @@ import AboutPage from "./pages/AboutPage";
 import PortfolioPage from "./pages/PortfolioPage";
 import ServicesPage from "./pages/ServicesPage";
 import ContactsPage from "./pages/ContactsPage";
+import DetailPhotoPage from "./pages/DetailPhotoPage";
 
 export default createBrowserRouter([
   {
@@ -31,6 +32,10 @@ export default createBrowserRouter([
       {
         path: 'contacts',
         Component: ContactsPage
+      },
+      {
+        path: 'product/:id',
+        Component: DetailPhotoPage 
       }
     ]
   }

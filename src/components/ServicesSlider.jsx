@@ -9,6 +9,7 @@ export default function({fetchUrl}) {
   const fetchImg = async ()=> {
     const response = await fetch(fetchUrl);
     const json = await response.json();
+    console.log(json)
     setImg(json)
   }
   useEffect(()=>{
