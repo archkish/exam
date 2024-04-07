@@ -6,19 +6,19 @@ export default function PortfolioGalery() {
 
   return(
     <section className="portfolio__galery" id="portfolio__galery">
-        <div className="portfolio-tile">
+        <div className="portfolio-tile" id="tile_portraits">
           <div className="galery__title">Portraits Photography</div>
           <div className="portfolio-block">
             <Galery fetchUrl={fetchUrlPortrait}/>
           </div>
         </div>
-        <div className="portfolio-tile">
+        <div className="portfolio-tile" id="tile_events">
           <div className="galery__title">Events Photography</div>
           <div className="portfolio-block">
             <Galery fetchUrl={fetchUrlEvents}/>
           </div>
         </div>
-        <div className="portfolio-tile">
+        <div className="portfolio-tile" id="tile_commerc">
           <div className="galery__title">Commercial Photography</div>
           <div className="portfolio-block">
             <Galery fetchUrl={fetchUrlComerc}/>
