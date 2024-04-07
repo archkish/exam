@@ -1,13 +1,8 @@
 
 import ServicesBottomBlock from "./ServicesBottomBlock";
 import ServicesTopBlock from "./ServicesTopBlock";
-import { useEffect, useRef } from 'react';
-import { useLocation } from 'react-router-dom';
 
 export default function ServicesPrice() {
-
-  const location = useLocation();
-  const servicesPriceRef = useRef(null);
 
   const fetchUrl = '/data/pricesPortrait.json'; 
   const fetchUrl2 = '/data/pricesEvents.json'; 
@@ -17,16 +12,8 @@ export default function ServicesPrice() {
   const fetchUrlEvents = '/data/dataEventsSlides.json'; 
   const fetchUrlComerc = '/data/dataComercialSlides.json'; 
 
-  useEffect(() => {
-    const hash = location.hash.split('#').pop();
-    const targetElement = document.getElementById(hash);
-    if (hash.startsWith('services__price') && targetElement) {
-      targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    }
-  }, [location]);
-
   return(
-    <section className="services__price" id="services__price" ref={servicesPriceRef}>
+    <section className="services__price" id="services__price" >
       <div className="show">
         <div id="portrait">
           <ServicesTopBlock 
