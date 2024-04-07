@@ -17,7 +17,7 @@ export default function SiteReviews() {
   // }, [])
 
   return(
-    <section className="reviews">
+    <section className="reviews" id="reviews">
       <div className="about-top">
         <div className="top-info">
           <div className="info-subtitle">Testimonials</div>

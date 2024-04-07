@@ -2,7 +2,7 @@ import ContactsForm from "./ContactsForm";
 
 export default function Contacts() {
   return(
-    <section className="contacts">
+    <section className="contacts" id="contacts">
       <div className="contacts-info">
         <div className="info-left">
           <div className="contacts-title">Contact Information</div>

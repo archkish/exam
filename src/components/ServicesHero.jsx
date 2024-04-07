@@ -1,6 +1,6 @@
 export default function ServicesHero() {
   return(
-    <section className="services__hero">
+    <section className="services__hero" id="services__hero">
       <div className="hero-bg">
       </div>
       <div className="about-info">

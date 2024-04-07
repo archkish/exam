@@ -5,7 +5,7 @@ export default function PortfolioGalery() {
   const fetchUrlComerc = '/data/dataComercialSlides.json'; 
 
   return(
-    <section className="portfolio__galery">
+    <section className="portfolio__galery" id="portfolio__galery">
         <div className="portfolio-tile">
           <div className="galery__title">Portraits Photography</div>
           <div className="portfolio-block">

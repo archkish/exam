@@ -1,6 +1,6 @@
 export default function PortfolioHero() {
   return(
-    <section className="portfolio__hero">
+    <section className="portfolio__hero" id="portfolio__hero">
       <div className="hero-bg">
       </div>
       <div className="about-info">

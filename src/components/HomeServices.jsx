@@ -2,7 +2,7 @@ import { Link } from "react-router-dom"
 
 export default function HomeServices() {
   return (
-    <section className="home__services">
+    <section className="home__services" id="home__services">
       <div className="about-top">
         <div className="top-info">
           <div className="info-subtitle">Services</div>

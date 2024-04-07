@@ -8,7 +8,7 @@ export default function HomeAbout() {
   const [isShow, setIsShow] = useState(false)
 
   return (
-    <section className="about">
+    <section className="about" id="about">
       <div className="about-top">
         <div className="top-info">
           <div className="info-subtitle">About</div>
@@ -20,6 +20,7 @@ export default function HomeAbout() {
       </div>
       <div className="about-bottom">
         <div className="bottom-img">
+
           <img src="../assets/images/avatar.png" alt="avatar"/>
         </div>
         <div className="wrapper-bottom">

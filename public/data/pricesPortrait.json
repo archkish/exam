@@ -19,7 +19,7 @@
   },
   {
     "name": "Couple Session",
-    "price": 300,
+    "price": "300",
     "services": {
       "one": "Celebrate your love story with an intimate photoshoot.",
       "two": "Includes a 2.5-hour photoshoot and 25 professionally edited images.",

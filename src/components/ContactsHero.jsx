@@ -1,6 +1,6 @@
 export default function ContactsHero() {
   return(
-    <section className="contacts__hero">
+    <section className="contacts__hero" id="contacts__hero">
       <div className="hero-bg">
       </div>
       <div className="bottom-links">

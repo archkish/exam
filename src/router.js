@@ -1,5 +1,5 @@
 
-import { createBrowserRouter } from "react-router-dom";
+import { createHashRouter } from "react-router-dom";
 import Layout from "./layout/Layout";
 import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
@@ -8,7 +8,7 @@ import ServicesPage from "./pages/ServicesPage";
 import ContactsPage from "./pages/ContactsPage";
 import DetailPhotoPage from "./pages/DetailPhotoPage";
 
-export default createBrowserRouter([
+export default createHashRouter([
   {
     path: '/',
     Component: Layout,

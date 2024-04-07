@@ -4,7 +4,7 @@ import PortfolioSlider from "./PortfolioSlider"
 
 export default function HomePortfolio() {
   return(
-    <section className="home__portfolio">
+    <section className="home__portfolio" id="home__portfolio">
       <div className="about-top">
         <div className="top-info">
           <div className="info-subtitle">Portfolio</div>

@@ -59,25 +59,25 @@ export default function SiteFooter() {
               <li className="nav__item"> 
                 <NavLink to="/">Home</NavLink>
                 <ul>
-                  <li><NavLink to="about">About me</NavLink></li>
-                  <li><NavLink to="">My works</NavLink></li>
-                  <li><a href="">Testimonials</a></li>
+                  <li><NavLink to="/#about">About me</NavLink></li>
+                  <li><NavLink to="/#home__portfolio">My works</NavLink></li>
+                  <li><NavLink to="/#reviews">Testimonials</NavLink></li>
                 </ul>
               </li>
-              <li className="nav__item"> <a href="">Portfolio</a>
+              <li className="nav__item"> 
+                <NavLink to="portfolio">Portfolio</NavLink>
                 <ul>
-                  <li><a href="">Events</a></li>
-                  <li><a href="">Portrait</a></li>
-                  <li><a href="">Branding</a></li>
-                  <li><a href="">Commerciale</a></li>
-                  <li><a href="">Wedding</a></li>
+                  <li><NavLink to="portfolio/#portfolio__brands">Brands</NavLink></li>
+                  <li><NavLink to="portfolio/#portfolio__galery">Gallery</NavLink></li>
+                  <li><NavLink to="portfolio/#faqs">Questions</NavLink></li>
                 </ul>
               </li>
-              <li className="nav__item"><a href="">Services</a>
+              <li className="nav__item">
+                <NavLink to="services">Services</NavLink>
                 <ul>
-                  <li><a href="">Portraits</a></li>
-                  <li><a href="">Events</a></li>
-                  <li><a href="">Commercial</a></li>
+                  <li><NavLink to="services/#portrait">Portraits</NavLink></li>
+                  <li><NavLink to="services/#events">Events</NavLink></li>
+                  <li><NavLink to="services/#commercial">Commercial</NavLink></li>
                 </ul>
               </li>
             </ul>

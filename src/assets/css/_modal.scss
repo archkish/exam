@@ -1,8 +1,10 @@
 .my-modal {
   border-radius: 20px 20px 15px 15px;
-  background-color: #fff;
+  background-color: $btn-hover-color;
   width: min(95%, 600px);
-  max-height: calc(100vh - 60px);
+  // max-height: calc(100vh - 60px);
+  // overflow: auto;
+  padding: 10px;
   &-wrapper {
     position: fixed;
     left: 0;
@@ -26,7 +28,6 @@
   }
   &-header {
     position: relative;
-    background-color: #222831;
     padding: 20px;
     border-radius: 15px 15px 0 0;
   }
@@ -53,6 +54,8 @@
   }
   &-body {
     padding: 20px;
+    max-height: calc(100vh - 60px);
+    overflow: auto;
     
     p {
       margin-bottom: 20px;
@@ -66,4 +69,28 @@
   //   overflow: auto;
   //   max-height: calc(100vh - 60px - 69px -40px);
   // }
+
+    .block {
+      .top {
+        justify-content: center;
+        position: relative;
+        top: 20px;
+      }
+      .text {
+        font-size: 2.5rem;
+      }
+    }
+}
+
+@media screen and (max-width: 660px) {
+  .my-modal {
+    .form {
+      &-top{
+        .item {
+          flex-direction: column;
+        }
+      }
+
+    }
+  }
 }

@@ -1,6 +1,6 @@
 export default function PortfolioBrands() {
   return(
-    <section className="portfolio__brands">
+    <section className="portfolio__brands" id="portfolio__brands">
       <div className="brands__title">
         Brands i have worked with
       </div>

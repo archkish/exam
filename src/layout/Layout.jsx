@@ -3,6 +3,7 @@ import SiteHeader from '../components/SiteHeader'
 import SiteFooter from '../components/SiteFooter'
 import MobileMenu from '../components/MobileMenu'
 import { useState } from 'react'
+import ScrollToAnchor from '../components/ScrollToAnchor';
 
 export default function Layout() {
 
@@ -20,6 +21,7 @@ export default function Layout() {
         <main>
           <Outlet/>
         </main>
+        <ScrollToAnchor/>
         <SiteFooter/>
         <MobileMenu isOpen={isOpen} clickHendler={clickHendler}/>
       </div>

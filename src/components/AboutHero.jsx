@@ -2,7 +2,7 @@ import Counters from "./Counters";
 
 export default function AboutHero() {
   return(
-    <section className="about__hero">
+    <section className="about__hero" id="about__hero">
       <div className="h-wrapp">
         <div className="hero_bg">
         </div>
@@ -16,36 +16,6 @@ export default function AboutHero() {
         <div className="info-name">About damien braun</div>
       </div>
       <Counters/>
-      {/* <div className="about__numbers">
-        <ul>
-          <li>
-            <div className="count"><span id="years"></span><span>+</span>
-            </div>
-            <div className="subtitle">Years in Business</div>
-          </li>
-          <li>
-            <div className="count"><span id="clients"></span><span>+</span></div>
-            <div className="subtitle">Happy Clients</div>
-          </li>
-          <li>
-            <div className="count"><span id="awards"></span><span>+</span></div>
-            <div className="subtitle">Photography Awards</div>
-          </li>
-          <li>
-            <div className="count"><span>0</span><span id="shots"></span><span>+</span></div>
-            <div className="subtitle">International Shots</div>
-          </li>
-          <li>
-            <div className="count"><span id="followers"></span><span>+</span></div>
-            <div className="subtitle">Social Media Followers</div>
-          </li>
-          <li>
-            <div className="count"><span id="rate"></span><span>%</span></div>
-            <div className="subtitle">Client Retention Rate</div>
-          </li>
-
-        </ul>
-      </div>          */}
       <div className="about__biography">
         <div className="biography-title">my biography</div>
         <div className="biography-descr">Damien Braun's love affair with photography began at a young age, nurtured by the captivating landscapes and vibrant cultures surrounding her in the heart of the USA. Her passion for storytelling through imagery led her to embark on a photography journey that has spanned over 15 years.

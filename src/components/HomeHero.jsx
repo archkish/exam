@@ -4,7 +4,7 @@ import Modal from "./Modal"
 export default function HomeHero() {
   const [isShow, setIsShow] = useState(false)
   return (
-    <section className="home__hero">
+    <section className="home__hero" id="home__hero">
       <div className="home__hero_top">
         <div className="top_info">
           <div className="info_subtitle">Stunning Photography by</div>

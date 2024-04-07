@@ -1,7 +1,7 @@
 .contacts {
   &-info {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(535px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     align-items:center;
     padding: 80px 0;
     gap: 80px;
@@ -9,7 +9,8 @@
     color: $subtitle-color;
   }
   .info-left {
-    width: 535px;
+    // max-width: 535px;
+    // width: 100%;
     color: $subtitle-color;
   }
   &-title {
@@ -25,83 +26,88 @@
   &-form {
     display: grid;
     border-top: 1px solid $border-color;
-    grid-template-columns: repeat(auto-fit, minmax(535px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 80px;
     padding: 80px 0;
   }
   .info-right {
     display: flex;
     gap: 50px;
-  }
-
-
-  .form {
-    position: relative;
-    top: 10px;
-    max-width: 980px;
-    width: 100%;
-
-    &-top {
-      margin-bottom: 50px;
-      font-family: "Manrope Regular";
-      display: flex;
-      flex-direction: column;
-      flex-wrap: wrap;
-      gap: 30px;
-      .item {
-        display: flex;
-        width: 100%;
-        justify-content: space-between;
-        div {
-          width: 100%;
-          &:first-child {
-            margin-right: 50px;
-          }
-          .error-msg {
-            height: 20px;
-            color: rgb(145, 25, 25);
-          }
-          
-        }
-
-      }
-      label {
-        color: $hero-name-color;
-        font-size: 1.13rem;
-      }
-      .input {
-        padding: 20px 20px 10px 0;
-        color: $placeholder-color;
-        font-size: 1.13rem;
-        line-height: 1.13rem;
-        outline: none;
-        width: 100%;
-        border: none;
-        border-bottom: 1px solid $border-color;
-        background-color: transparent;
-        transition: all .5s ease;
-        &.has-error {
-          border-color: red;
-        }
-        &::placeholder {
-          color: $placeholder-color;
-          font-size: 1.38rem;
-          text-transform: uppercase;
-          transition: all .5s ease;
-        }
-        &:focus::placeholder {
-          font-size: 0;
-        }
-        &:focus {
-          border-bottom: 1px solid  $hero-name-color;
-        }
+    .card-link a{
+      text-decoration: none;
+      color: $hero-name-color;
+      &:hover {
+        color: $subtitle-color;
       }
     }
-    &-bottom {
-      flex-direction: column;
-      input {
+  }
+}
+.form {
+  position: relative;
+  top: 10px;
+  max-width: 980px;
+  width: 100%;
+
+  &-top {
+    margin-bottom: 50px;
+    font-family: "Manrope Regular";
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 30px;
+    .item {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      div {
         width: 100%;
+        &:first-child {
+          margin-right: 50px;
+        }
+        .error-msg {
+          height: 20px;
+          color: rgb(145, 25, 25);
+        }
+        
       }
+
+    }
+    label {
+      color: $hero-name-color;
+      font-size: 1.13rem;
+    }
+    .input {
+      padding: 20px 20px 10px 0;
+      color: $placeholder-color;
+      font-size: 1.13rem;
+      line-height: 1.13rem;
+      outline: none;
+      width: 100%;
+      border: none;
+      border-bottom: 1px solid $border-color;
+      background-color: transparent;
+      transition: all .5s ease;
+      &.has-error {
+        border-color: red;
+      }
+      &::placeholder {
+        color: $placeholder-color;
+        font-size: 1.38rem;
+        text-transform: uppercase;
+        transition: all .5s ease;
+      }
+      &:focus::placeholder {
+        font-size: 0;
+      }
+      &:focus {
+        border-bottom: 1px solid  $hero-name-color;
+      }
+    }
+  }
+  &-bottom {
+    flex-direction: column;
+    input {
+      width: 100%;
     }
   }
 }
@@ -124,9 +130,21 @@
     }
   }
 }
+@media screen and (max-width: 1194px) {
+  .contacts {
+    &-info {
+      gap: 30px;
+      grid-template-columns: 1fr;
+
+    }
+  }
+}
 
 @media screen and (max-width: 600px) {
   .contacts {
+    &-title {
+      font-size: 1.75rem;
+    }
     .info-right {
       display: flex;
       flex-direction: column;
@@ -135,10 +153,17 @@
       gap: 40px;
     }
     .form {
+
       &-top {
         gap: 30px;
         margin-bottom: 30px;
+        input {
+          padding-right: 0px;
+        }
         .item {
+          div {
+            margin-right: 0;
+          }
           flex-direction: column;
           gap: 30px;
         }

@@ -3,7 +3,7 @@ import SiteAccordion from "./SiteAccordion"
 
 export default function SiteFaqs() {
   return(
-    <section className="faqs">
+    <section className="faqs" id="faqs">
       <div className="about-top">
         <div className="top-info">
           <div className="info-subtitle">FAQ’s</div>
