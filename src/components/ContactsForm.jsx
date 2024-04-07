@@ -56,11 +56,11 @@ export default function ContactsForm() {
     if(isValid) {
 
       const message = `
-      <b>Name: </b>${values.firstName}\r\n
-      <b>Last Name: </b>${values.lastName}\r\n
-      <b>Email: </b> ${values.email}\r\n
-      <b>Phone: </b> ${values.phone}\r\n
-      <b>Message: </b> ${values.message}\r\n
+          <b>Name: </b>${values.firstName}\r\n
+          <b>Last Name: </b>${values.lastName}\r\n
+          <b>Email: </b> ${values.email}\r\n
+          <b>Phone: </b> ${values.phone}\r\n
+          <b>Message: </b> ${values.message}\r\n
       `;
 
       const url = `https://api.telegram.org/bot${import.meta.env.VITE_BOT_TOKEN}/sendMessage?chat_id=${import.meta.env.VITE_CHAT_ID}&text=${encodeURI(message)}&parse_mode=HTML`;

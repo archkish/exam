@@ -28,6 +28,9 @@
     border-radius: 20px;
     overflow: hidden;
     margin-bottom: 19px;
+    img {
+      object-fit: contain;
+    }
     &:hover {
       opacity: .7;
     }

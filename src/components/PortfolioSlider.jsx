@@ -25,6 +25,11 @@ export default function PortfolioSlider() {
     slidesToScroll: 1,
     centerPadding: "60px",
     arrows: false,
+    lazyLoad: true,
+    autoplay: true,
+    autoplaySpeed: 2500,
+    cssEase: "linear",
+    pauseOnHover: true,
     responsive: [
       {
         breakpoint: 1024,
